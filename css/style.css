@@ -23,7 +23,7 @@ background-size: cover;*/
 }
 .container-home{
     margin-top: 100px;
-    background-color: #989da083;
+    background-color: #35b9dc33;
     padding-bottom:50px;
 
 }
@@ -64,7 +64,8 @@ background-size: cover;*/
 }
 /*Login Page Style*/
 .login{
-    background-image: url(/bg.jpg);
+    background-image:url(/bg.jpg);
+    
     background-size: cover;
     
     }
@@ -125,7 +126,7 @@ background-size: cover;*/
 /*sign up*/
 .signup {
     color: rgb(2, 0, 0);
-    background-image:url(/sign.jpg);
+    background-image: url(/sign.jpg);
     font-family: 'Roboto', sans-serif;
 }
 .form-control, .form-control:focus, .input-group-addon {
@@ -243,7 +244,7 @@ background-size: cover;*/
   }
   /*Contact Page*/
   .contact{
-    background-image: url("/7.jpg");
+    background-image: url(/7.jpg);
     background-size: cover;
     
   }
@@ -307,3 +308,31 @@ background-size: cover;*/
 .fullwrap:hover .fullcap {
   visibility: visible; opacity: 1;
 }
+/*card dist*/
+#header {
+    background: url(/images/dist.jpg) center center / cover no-repeat ;
+  }
+  .container-dist{
+    margin-top: 100px;
+    background-color: #3bc75283;
+    padding-bottom:50px;
+
+}
+.lead{
+ color: black;
+ align:center;
+ margin-left:20px !important;
+}
+.caption-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
