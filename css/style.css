@@ -64,7 +64,7 @@ background-size: cover;*/
 }
 /*Login Page Style*/
 .login{
-    background-image:url(/bg.jpg);
+   
     
     background-size: cover;
     
@@ -126,7 +126,7 @@ background-size: cover;*/
 /*sign up*/
 .signup {
     color: rgb(2, 0, 0);
-    background-image: url(/sign.jpg);
+    
     font-family: 'Roboto', sans-serif;
 }
 .form-control, .form-control:focus, .input-group-addon {
@@ -244,7 +244,7 @@ background-size: cover;*/
   }
   /*Contact Page*/
   .contact{
-    background-image: url(/7.jpg);
+    /* background-image: url(/7.jpg); */
     background-size: cover;
     
   }
