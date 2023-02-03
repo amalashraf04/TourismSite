@@ -120,4 +120,50 @@ function validateconfirmPassword() {
     }
     return true;
   }
-  
+  function checkPassword(){
+    let name = document.getElementById("pwd");
+    let nameError=document.getElementById("passerror");
+    let regexName =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    if(regexName.test(name.value)==true){
+        nameError.innerHTML="Valid Format"
+        nameError.style.color='green'
+        return true
+
+    }
+    else{
+        nameError.innerHTML="Password must have minimum 8 characters, at least one uppercase, and one lower case, must contain at least one number!"
+        nameError.style.color='red'
+        nameError.style.fontSize='12px'
+        return false
+    }
+}
+
+function validateMyForm()
+{
+   if(validateName1()=== false)
+  { 
+    alert("Validation Failed");
+    returnToPreviousPage();
+    return false;
+   }
+else{
+    
+    alert("Validations passed");
+    return true;
+ }
+}
+
+function validateMyFormsign()
+{
+   if(validateName() && validatePassword() && validatemail() && validatephone() && validateconfirmPassword())
+  { 
+    alert("Validation Passed");
+    //returnToPreviousPage();
+    return true;
+   }
+else{
+    
+    alert("Validations failed");
+    return false;
+ }
+}
