@@ -90,7 +90,7 @@ function validatemail(){
 
     }
     else{
-        nameError.innerHTML="Invalid Email Address!"
+        nameError.innerHTML="You have entered an invalid email address!"
         nameError.style.color='red'
         return false
     }
@@ -106,7 +106,7 @@ function validatephone(){
 
     }
     else{
-        nameError.innerHTML="Invalid Phone Number"
+        nameError.innerHTML="Invalid Format"
         nameError.style.color='red'
         return false
     }
@@ -120,7 +120,25 @@ function validateconfirmPassword() {
     }
     return true;
   }
-  function checkPassword(){
+
+//   form.addEventListener('submit', function (e) {
+//     // prevent the form from submitting
+//     e.preventDefault();
+
+//     // validate forms
+//     let isUsernameValid = validateName(),
+//         isEmailValid = validatemail(),
+//         isPasswordValid = validatePassword(),
+//         isConfirmPasswordValid = validateconfirmPassword();
+
+//     let isFormValid = isUsernameValid
+
+//     // submit to the server if the form is valid
+//     if (isFormValid) {
+
+//     }
+// });
+function checkPassword(){
     let name = document.getElementById("pwd");
     let nameError=document.getElementById("passerror");
     let regexName =  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
@@ -142,23 +160,23 @@ function validateMyForm()
 {
    if(validateName1()=== false)
   { 
-    alert("Validation Failed");
+    alert("Login Failed");
     returnToPreviousPage();
     return false;
    }
 else{
     
-    alert("Validations passed");
+    alert("Welcome,Login Successfully");
     return true;
  }
 }
 
 function validateMyFormsign()
 {
-   if(validateName() && validatePassword() && validatemail() && validatephone() && validateconfirmPassword())
+   if(validateName() === true && validatemail()=== true && validatephone()=== true && validateconfirmPassword()===true &&checkPassword()===true )
   { 
-    alert("Validation Passed");
-    //returnToPreviousPage();
+    alert("Registration Completed Succeessfully");
+   // returnToPreviousPage();
     return true;
    }
 else{
