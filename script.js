@@ -158,16 +158,17 @@ function checkPassword(){
 
 function validateMyForm()
 {
-   if(validateName1()=== false)
+   if(validateName1() === true && checkPassword() === true)
   { 
-    alert("Login Failed");
-    returnToPreviousPage();
-    return false;
+    alert("Welcome,Login Successfully");
+    return true;
+    
    }
 else{
     
-    alert("Welcome,Login Successfully");
-    return true;
+    alert("Login Failed");
+    returnToPreviousPage();
+    return false;
  }
 }
 
